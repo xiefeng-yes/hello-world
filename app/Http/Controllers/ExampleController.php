@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Laravel\Lumen\Http\Request;
+
 class ExampleController extends Controller
 {
     /**
@@ -14,5 +16,9 @@ class ExampleController extends Controller
         //
     }
 
-    //
+    //demo测试
+    public function demo( Request $request)
+    {
+        echo "eeeee";
+    }
 }
