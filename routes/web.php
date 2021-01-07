@@ -13,4 +13,6 @@
 |
 */
 
-$router->get('/example/demo', ['uses'=>"ExampleController@demo"]);
+//$router->get('/example/demo', ['uses'=>"ExampleController@demo"]);
+$router->get('{controller}/{method}','ApiDispatch@dispatch');
+$router->post('{controller}/{method}','ApiDispatch@dispatch');
